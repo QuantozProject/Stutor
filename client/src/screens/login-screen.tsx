@@ -39,7 +39,7 @@ export const LoginScreen = () => {
       <SafeAreaView />
       {showWebview ? (
         <WebView
-          source={{ uri: `https://stutor.seijsener.space/v1/auth/login` }}
+          source={{ uri: `${process.env.API_URL}/auth/login` }}
           onNavigationStateChange={onNavigationStateChange}
         />
       ) : (
